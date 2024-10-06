@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+
+* {
+    font-family: sans-serif;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.display-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+}
+
+.font-size-15{
+    font-size: 15px;
+}
+
+.text-align-center{
+    text-align: center;
+}
+.justify-content-space{
+    justify-content: space-between;
+}
+
+.mat-calendar-body-selected{
+    background-color: #ed9f3e !important;
+
+}
+
+.cdk-global-overlay-wrapper{
+    justify-content: space-around !important;
+}

@@ -1,0 +1,27 @@
+<form>
+<div>
+  Scheduling & Logging
+</div>
+  <mat-accordion  [multi]="true">
+    <mat-expansion-panel *ngFor="let item of accordionItems" [expanded]="item.expanded" (opened)="logSelection(item.title)">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ item.title }}
+        </mat-panel-title>
+        <mat-panel-description>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div *ngIf="item.title === 'Morning'">
+        <div *ngFor="let data of activity;let i=index">
+          <label for="fname">{{data.name}}</label>
+          <input type="text" [value]="data.expected" disabled="true">
+          <input type="text" [value]="data.actual">
+        </div>
+        
+      </div>
+    </mat-expansion-panel>
+
+    
+  </mat-accordion>
+
+</form>

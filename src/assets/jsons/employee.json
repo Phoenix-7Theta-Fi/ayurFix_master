@@ -1,0 +1,21 @@
+{
+    "empDetails": [
+        {
+            "id": 1,
+            "name": "John",
+            "age": 30
+        },
+        {
+            "id": 2,
+            "name": "mmax",
+            "age": 28
+        },
+        {
+            "id": 3,
+            "name": "maxel",
+            "age": 31
+        }
+    ]
+}
+
+

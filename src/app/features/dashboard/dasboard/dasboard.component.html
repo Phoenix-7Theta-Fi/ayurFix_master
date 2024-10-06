@@ -1,0 +1,60 @@
+<div>
+    <p class="font-style-header">Good evening, Alex </p>
+    <div class="main-container">
+        <div class="container">
+            <img src="assets/images/dashboard.jpg" class="img-dashboard" alt="dashboard">
+            <div class="bottomleft">
+                <h1 class="font-color"> How are you feeling today?</h1>
+                <button class="button-style">Tell us More</button>
+
+            </div>
+        </div>
+        <div class="calendar-container">
+            <mat-calendar [(selected)]="selected" [minDate]="minDate" (selectedChange)="onDateSelected($event)"></mat-calendar>
+            <img src="assets/images/doctor.jpeg" alt="doctor-img" class="doc-img">
+            <div>
+                <p class="doc-name">Dr. Mehta</p>
+            </div>
+            <div class="display-flex justify-content-space">
+                <p class="doc-proffesion">Ayurvedic Practitioner</p>
+                <button class="button-style">Message</button>
+            </div>
+            <div>
+                <p class="doc-name">Treatment Plan</p>
+                <ol class="StepProgress">
+                    <li class="StepProgress-item">
+                        <strong class="routine">Morning Routine</strong>
+                    </li>
+                    <li class="StepProgress-item">
+                        <strong class="routine">Midday Routine</strong>
+                    </li>
+                    <li class="StepProgress-item">
+                        <strong class="routine">Evening Routine</strong>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+
+    <div class="market-place">
+        <h4>Marketplace Highlights</h4>
+        <div class="display-grid">
+            <div *ngFor="let product of arrayOfProducts;let i =index;">
+                <img src={{product.imgpath}} alt="product.name" class="marketing-place">
+                <p class="font-size-15 text-align-center">{{product.name}}</p>
+            </div>
+        </div>
+
+        <div class="market-place">
+            <h4>Feature Products</h4>
+            <div class="display-grid">
+                <div *ngFor="let product of arrayOfProducts;let i =index;">
+                    <img src={{product.imgpath}} alt="product.name" class="marketing-place">
+                    <p class="font-size-15 text-align-center">{{product.name}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
