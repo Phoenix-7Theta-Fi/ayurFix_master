@@ -15,6 +15,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { ApplicationStatusComponent } from './features/application-status/application-status/application-status.component';
+import { LoginComponent } from './features/auth/login/login.component';
+import { SignUpComponent } from './features/auth/sign-up/sign-up.component';
 
 
 
@@ -25,7 +27,9 @@ import { ApplicationStatusComponent } from './features/application-status/applic
     HeaderComponent,
     DasboardComponent,
     ScheduleLoggingComponent,
-    ApplicationStatusComponent
+    ApplicationStatusComponent,
+    LoginComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
